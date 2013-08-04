@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmeCorp.Payments.MyPsp.EndPoint", "AcmeCorp.Payments.MyPsp.EndPoint\AcmeCorp.Payments.MyPsp.EndPoint.csproj", "{3C65AF9A-8D88-4FE6-9102-2D2275256E50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA0814E0-B347-40B6-BD6F-3506FE6FDC36}"
+	ProjectSection(SolutionItems) = preProject
+		BuildServer.testsettings = BuildServer.testsettings
+		Default.ruleset = Default.ruleset
+		FxCopCustomDictionary.xml = FxCopCustomDictionary.xml
+		Local.testsettings = Local.testsettings
+		Settings.StyleCop = Settings.StyleCop
+		StrongNameKeyPair.snk = StrongNameKeyPair.snk
+		StrongNamePublicKey.snk = StrongNamePublicKey.snk
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{D3BB8F35-8AD8-4270-8BF4-9D6D905AD2D4}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\Build.proj = Scripts\Build.proj
+		Scripts\Build.Project.Assembly.targets = Scripts\Build.Project.Assembly.targets
+		Scripts\Build.Project.CSharp.targets = Scripts\Build.Project.CSharp.targets
+		Scripts\Build.Project.targets = Scripts\Build.Project.targets
+		Scripts\Build.Project.VisualBasic.targets = Scripts\Build.Project.VisualBasic.targets
+		Scripts\Build.targets = Scripts\Build.targets
+		Scripts\CCNet.proj = Scripts\CCNet.proj
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmeCorp.Payments.MyPsp.EndPoint.Tests", "AcmeCorp.Payments.MyPsp.EndPoint.Tests\AcmeCorp.Payments.MyPsp.EndPoint.Tests.csproj", "{8F8D0E6D-034F-45C1-A6E1-663E24999C8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EDA2D252-BE59-4148-86DF-63C0EC589062}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommandFiles", "CommandFiles", "{8922CA07-1026-4935-9C7B-443ECBFF7037}"
+	ProjectSection(SolutionItems) = preProject
+		CommandFiles\Build.cmd = CommandFiles\Build.cmd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EAFFC542-2449-48EB-913A-D4A1B0C69474}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C65AF9A-8D88-4FE6-9102-2D2275256E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C65AF9A-8D88-4FE6-9102-2D2275256E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C65AF9A-8D88-4FE6-9102-2D2275256E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C65AF9A-8D88-4FE6-9102-2D2275256E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F8D0E6D-034F-45C1-A6E1-663E24999C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F8D0E6D-034F-45C1-A6E1-663E24999C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F8D0E6D-034F-45C1-A6E1-663E24999C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F8D0E6D-034F-45C1-A6E1-663E24999C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F8D0E6D-034F-45C1-A6E1-663E24999C8C} = {EDA2D252-BE59-4148-86DF-63C0EC589062}
+	EndGlobalSection
+EndGlobal
