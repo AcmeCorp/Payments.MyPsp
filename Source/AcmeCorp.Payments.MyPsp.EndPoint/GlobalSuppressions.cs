@@ -7,3 +7,7 @@
 // Error ListQueues, point to "Suppress Message(s)", and click 
 // "In Project Suppression File".
 // You do not need to add suppressions to this file manually.
+
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "AcmeCorp.Payments.MyPsp.EndPoint")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "AcmeCorp.Payments.MyPsp.EndPoint.Handlers")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303:Do not pass literals as localized parameters", MessageId = "System.Console.WriteLine(System.String)", Scope = "member", Target = "AcmeCorp.Payments.MyPsp.EndPoint.Handlers.MyCommandV1Handler.#Handle(AcmeCorp.Payments.MyPsp.Messages.Commands.MyCommandV1)")]

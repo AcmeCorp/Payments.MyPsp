@@ -19,7 +19,7 @@
     <AssemblyInfoCommonFileLine Include="using System.Runtime.CompilerServices%3B" />
     <AssemblyInfoCommonFileLine Include="using System.Runtime.InteropServices%3B" />
     <AssemblyInfoCommonFileLine Include="[assembly: AssemblyCompany(%22$(CompanyName)%22)]" />
-    <AssemblyInfoCommonFileLine Include="[assembly: AssemblyConfiguration(%22$(BuildLabel) $(Configuration)%22)]" />
+    <AssemblyInfoCommonFileLine Include="[assembly: AssemblyConfiguration(%22$(Configuration)%22)]" />
     <AssemblyInfoCommonFileLine Include="[assembly: AssemblyCopyright(%22Copyright © $(CompanyName) $(Year)%22)]" />
     <AssemblyInfoCommonFileLine Include="[assembly: AssemblyFileVersion(%22$(BuildLabelNumber)%22)]" />
     <AssemblyInfoCommonFileLine Include="[assembly: AssemblyInformationalVersion(%22$(BuildLabelNumber)%22)]" />
