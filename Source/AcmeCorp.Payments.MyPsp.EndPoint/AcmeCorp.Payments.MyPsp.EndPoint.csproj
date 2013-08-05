@@ -98,7 +98,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\MessageType.cs" />
+    <Compile Include="Configuration\AzureServiceBusTransportConfiguration.cs" />
+    <Compile Include="Configuration\MessageTypeDefinition.cs" />
     <Compile Include="Configuration\ProvideUnicastBusConfiguration.cs" />
     <Compile Include="Configuration\SerializationConfiguration.cs" />
     <Compile Include="EndpointConfig.cs" />

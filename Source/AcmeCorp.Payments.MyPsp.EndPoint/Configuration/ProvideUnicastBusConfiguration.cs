@@ -5,7 +5,6 @@
     using NServiceBus.Config;
     using NServiceBus.Config.ConfigurationSource;
 
-// ReSharper disable once UnusedMember.Global
     public class ProvideUnicastBusConfiguration : IProvideConfiguration<UnicastBusConfig>
     {
         [ExcludeFromCodeCoverage]

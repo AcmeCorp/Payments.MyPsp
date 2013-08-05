@@ -9,19 +9,25 @@ namespace AcmeCorp.Payments.MyPsp.EndPoint
         This class configures this endpoint as a Server. More information about how to configure the NServiceBus host
         can be found here: http://particular.net/articles/the-nservicebus-host
     */
-    public class EndpointConfig : IConfigureThisEndpoint, AsA_Publisher, IWantCustomInitialization, UsingTransport<AzureServiceBus>
+    public class EndpointConfig : IConfigureThisEndpoint, AsA_Server, IWantCustomInitialization, UsingTransport<AzureServiceBus>
     {
         [ExcludeFromCodeCoverage]
         public void Init()
         {
             Configure
-                .With(GetMessageAssemblies())
+                .With(GetAssembliesToScan())
+                .DefaultBuilder()
                 .UnicastBus();
         }
 
-        internal static Assembly[] GetMessageAssemblies()
+        internal static Assembly[] GetAssembliesToScan()
         {
-            return new[] { typeof(EndpointConfig).Assembly, typeof(MyEventV1).Assembly };
+            return new[]
+            {
+                typeof(EndpointConfig).Assembly, 
+                typeof(MyEventV1).Assembly, 
+                typeof(NServiceBus.Azure.AutoRenewLease).Assembly
+            };
         }
     }
 }

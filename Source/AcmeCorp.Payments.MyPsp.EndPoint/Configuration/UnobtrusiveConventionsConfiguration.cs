@@ -7,9 +7,9 @@
         public void Init()
         {
             Configure.Instance
-                .DefiningCommandsAs(MessageType.IsCommand)
-                .DefiningEventsAs(MessageType.IsEvent)
-                .DefiningExpressMessagesAs(MessageType.IsMessage);
+                .DefiningCommandsAs(MessageTypeDefinition.IsCommand)
+                .DefiningEventsAs(MessageTypeDefinition.IsEvent)
+                .DefiningMessagesAs(MessageTypeDefinition.IsMessage);
         }
     }
 }

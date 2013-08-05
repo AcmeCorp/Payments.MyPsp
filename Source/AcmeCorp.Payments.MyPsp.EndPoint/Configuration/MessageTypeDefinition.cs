@@ -2,7 +2,7 @@
 {
     using System;
 
-    internal static class MessageType
+    internal static class MessageTypeDefinition
     {
         public static Func<Type, bool> IsMessage()
         {
@@ -31,7 +31,7 @@
 
             return
                 type.Namespace != null &&
-                (type.Namespace.Contains(".Events") || type.Namespace.Contains(".Events")) &&
+                (type.Namespace.Contains(".Contracts") || type.Namespace.Contains(".Events")) &&
                 !type.Namespace.StartsWith("NServiceBus", StringComparison.CurrentCulture);
         }
 

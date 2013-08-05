@@ -18,9 +18,9 @@
         [TestInitialize]
         public void TestInitialize()
         {
-            MessageConventionExtensions.IsMessageTypeAction = MessageType.IsMessage();
-            Assembly[] messageAssemblies = EndpointConfig.GetMessageAssemblies();
-            Test.Initialize(messageAssemblies);
+            MessageConventionExtensions.IsMessageTypeAction = MessageTypeDefinition.IsMessage();
+            Assembly[] assemblies = EndpointConfig.GetAssembliesToScan();
+            Test.Initialize(assemblies);
         }
 
         [TestMethod]

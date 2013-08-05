@@ -77,7 +77,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Configuration\MessageTypeTests.cs" />
+    <Compile Include="Configuration\MessageTypeDefinitionTests.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Handlers\MyCommandV1HandlerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
